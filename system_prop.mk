@@ -25,7 +25,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HWC
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
+    debug.renderengine.backend=gles
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
