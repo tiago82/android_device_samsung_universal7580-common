@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
     libcamera_client_shim \
     libexynoscamera_shim \
     libstagefright_shim \
+    mediaserver.rc \
     libui_shim \
     libcutils_shim
 
