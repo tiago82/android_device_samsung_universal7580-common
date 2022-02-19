@@ -172,3 +172,7 @@
 
 # Gatekeeper
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software			u:object_r:hal_gatekeeper_default_exec:s0
+
+# radio
+/data/data/com.android.providers.telephony/databases(/.*)?       u:object_r:radio_core_data_file:s0
+/data/data/com.android.providers.telephony/shared_prefs(/.*)?    u:object_r:radio_core_data_file:s0
