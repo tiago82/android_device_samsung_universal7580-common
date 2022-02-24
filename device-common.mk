@@ -129,6 +129,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl
 
+# Memory Optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_psi=false \
+    ro.lmk.critical=0 \
+    ro.lmk.low=950 \
+    ro.lmk.swap_free_low_percentage=15 \
+    ro.vendor.qti.am.reschedule_service=true \
+    ro.vendor.qti.sys.fw.use_trim_settings=true \
+    ro.vendor.qti.sys.fw.trim_empty_percent=50 \
+    ro.vendor.qti.sys.fw.trim_cache_percent=100 \
+    ro.vendor.qti.sys.fw.empty_app_percent=25 \
+    ro.config.max_starting_bg=2
+
 # Mobicore
 PRODUCT_PACKAGES += \
     mcDriverDaemon \
